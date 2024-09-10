@@ -1,17 +1,11 @@
 {
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
+  "extends": "next",
   "rules": {
-    "@typescript-eslint/no-unused-vars": ["warn"],  // Show a warning instead of an error for unused variables
-    "@typescript-eslint/no-use-before-define": "off", // Disable error for using variables before defining them
-    "no-console": "off", // Allow console logs
-    "@typescript-eslint/no-explicit-any": "off" // Disable warning for using 'any' type
-  },
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "node": true
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
   }
 }
+
+// {
+//   "extends": "next/core-web-vitals"
+// }
