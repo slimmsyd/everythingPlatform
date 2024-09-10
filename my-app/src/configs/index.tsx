@@ -6,9 +6,9 @@ import { coinbaseWallet } from "wagmi/connectors";
 import { base, mainnet, goerli, polygon, arbitrum, optimism } from "viem/chains"; // Import more chains as needed
 
 // Get projectId at https://cloud.walletconnect.com
-// export const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
+export const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
 
-// if (!projectId) throw new Error("Project ID is not defined");
+if (!projectId) throw new Error("Project ID is not defined");
 
 const metadata = {
   name: "SYDNEY ENGINEERS",
