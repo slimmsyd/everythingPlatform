@@ -11,7 +11,7 @@ import { State, WagmiProvider } from "wagmi";
 
 // Setup queryClient
 const queryClient = new QueryClient();
-export const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
+export const projectId = "05b54b3a74a9f48b9042c292cfee530c"
 
 if (!projectId) throw new Error("Project ID is not defined");
 
