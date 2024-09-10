@@ -4,6 +4,7 @@ import { defaultWagmiConfig } from "@web3modal/wagmi/react/config";
 import { cookieStorage, createStorage } from "wagmi";
 import { coinbaseWallet } from "wagmi/connectors";
 import { base, mainnet, goerli, polygon, arbitrum, optimism } from "viem/chains"; // Import more chains as needed
+require('dotenv').config();
 
 // Get projectId at https://cloud.walletconnect.com
 export const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
