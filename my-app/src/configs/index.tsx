@@ -10,7 +10,7 @@ require('dotenv').config();
 export const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
 
 if (!projectId) throw new Error("Project ID is not defined");
-console.log("Loggign project Id", projectId)
+// console.log("Loggign project Id", projectId)
 
 const metadata = {
   name: "SYDNEY ENGINEERS",

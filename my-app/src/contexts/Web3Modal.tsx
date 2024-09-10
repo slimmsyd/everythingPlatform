@@ -1,7 +1,7 @@
 "use client";
 
 import React, { ReactNode } from "react";
-import { config, projectId } from "@/configs";
+import { config } from "@/configs";
 
 import { createWeb3Modal } from "@web3modal/wagmi/react";
 
@@ -11,6 +11,7 @@ import { State, WagmiProvider } from "wagmi";
 
 // Setup queryClient
 const queryClient = new QueryClient();
+export const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
 
 if (!projectId) throw new Error("Project ID is not defined");
 
