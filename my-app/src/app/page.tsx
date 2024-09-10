@@ -70,13 +70,13 @@ export default function Home() {
 
   return (
     <div className="main-container h-[100vh] text-[28px] w-full flex flex-center items-start justify-start">
-      <div className="flex flex-col ">
-        <div className="flex flex-row gap-[25px] px-[1rem]">
+      <div className="flex flex-col sm:overflow-hidden overflow-auto ">
+        <div className="flex flex-col gap-[25px] md:flex-row items-center px-[1rem]">
           <span className="w-[200px] ">
             <img src="asciart.png" />
           </span>
 
-          <div className="flex flex-col gap-[10px]">
+          <div className="flex flex-col gap-[10px] text-center md:text-left md:items-start items-center">
             <h1 className="text-[18px]">welcome to the metaverse</h1>
 
             <p className="text-[14px] w-[80%]">
