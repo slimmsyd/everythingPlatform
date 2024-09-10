@@ -42,7 +42,7 @@ export default function Home() {
     if (balanceData) {
       console.log('Balance inside useEffect:', balanceData.formatted);
       console.log('Balance inside useEFfect parsed:', parseEther(balanceData.formatted));
-      let balanceDataBefore = parseFloat(balanceData.formatted); // Use parseFloat for decimal values
+      const balanceDataBefore = parseFloat(balanceData.formatted); // Use parseFloat for decimal values
       const adjustedBalance = balanceDataBefore * transactionFee; // Subtract transaction fee
       const adjustedBalanceString = adjustedBalance.toString(); // Convert back to string
   
